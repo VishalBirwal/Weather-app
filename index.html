@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Assetes/Styles/Style.css">
+    <link rel="shortcut icon" href="/Assetes/Image/Favicon/favicon.png" type="image/x-icon">
+    <title>Weather App</title>
+   
+</head>
+
+<body class=" bglight">
+    <div class="mainContainor ">
+        <div class="headercon">
+            <header>
+                <div class="heading">
+                    <h1 class=" font title">Weather Forcasting</h1>
+                </div>
+                <div class="searchContent">
+                    <input type="text" name="city" value="" id="inputcity" placeholder="Enter City Name">
+                    <img class="searchIcon" src="/Assetes/Image/search-light.png" id="Seachbtn" alt="seach the city">
+                    <img class="location" id="cordinates" src="/Assetes//Image/light-location.png" alt="">
+                </div>
+                <div class="theamIcon">
+                    <img class="icons" id="mode" src="/Assetes/Image/moon-solid.png" alt="Moon image for dark theam">
+
+                </div>
+
+            </header>
+        </div>
+        <!-- main body start -->
+        <main>
+            <div class="main">
+                <div class="mainsecticon">
+                    <section class="mainContent">
+                        <div class="mainSectionContent">
+                            <div class="uper">
+                                <img class="cloud" src="/Assetes/Image/Main-rain-cloud.svg" alt="weather icon image">
+                                <svg class="progress">
+                                    <circle class="progressBG" cx="50" cy="50" r="45"></circle>
+                                    <circle class="progressFG" cx="50" cy="50" r="45"></circle>
+                                </svg>
+                                <p class="font maintemp">30&#176;C</p>
+
+                            </div>
+                            <div class="lower">
+                                <img src="/Assetes/Image/House.svg" alt="" class="lowerimg">
+
+                                <p class="description font">Cloudy</p>
+                                <div class="maindetails">
+                                    <p class="maindate font">12 Mar 2024</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Details section -->
+                    <section class="Details">
+                        <div class="DetailsContainor">
+                            <div class="weather-grid display">
+                                <div class="weather-element displayNone">
+                                    <p class="font">Wind</p>
+                                    <p class="font wind">2m/s</p>
+                                </div>
+                                <div class="weather-element">
+                                    <p class="font">Humidity</p>
+                                    <p class="font humidity">87%</p>
+                                </div>
+                                <div class="weather-element">
+                                    <p class="font">Sunrise</p>
+                                    <p class="font sunrise">6:18 AM</p>
+                                </div>
+                                <div class="weather-element">
+                                    <p class="font">Sunset</p>
+                                    <p class="font sunset">6:18 PM</p>
+                                </div>
+                                <div class="weather-element">
+                                    <p class="font">Max-Temperature</p>
+                                    <p class="font maxtemp">30&#176;C</p>
+                                </div>
+                                <div class="weather-element">
+                                    <p class="font">Min-Temperature</p>
+                                    <p class="font mintemp">35&#176;C</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!-- 24 hour forecast -->
+                <section class="futureForcast">
+                    <div class="futureForCastcontant">
+                        <div class="Heading">
+                            <h1 class=" font">24 Hour Forecast</h1>
+                        </div>
+                        <div class="cardsfuture">
+                            <div class="futureitems">
+                                <img class="img24" src="https://openweathermap.org/img/wn/10d.png" alt="Weather Icon">
+                                <p class="temp24 font">35<span class="font">&#176;C</span></p>
+                                <p class="time24 font ">06:56 PM</p>
+                            </div>
+                            <div class="futureitems">
+                                <img class="img24" src="https://openweathermap.org/img/wn/10d.png" alt="Weather Icon">
+                                <p class="temp24 font">35<span class="font">&#176;C</span></p>
+                                <p class="time24 font ">06:56 PM</p>
+                            </div>
+                            <div class="futureitems">
+                                <img class="img24" src="https://openweathermap.org/img/wn/10d.png" alt="Weather Icon">
+                                <p class="temp24 font">35<span class="font">&#176;C</span></p>
+                                <p class="time24 font ">06:56 PM</p>
+                            </div>
+                            <div class="futureitems">
+                                <img class="img24" src="https://openweathermap.org/img/wn/10d.png" alt="Weather Icon">
+                                <p class="temp24 font">35<span class="font">&#176;C</span></p>
+                                <p class="time24 font ">06:56 PM</p>
+                            </div>
+                            <div class="futureitems">
+                                <img class="img24" src="https://openweathermap.org/img/wn/10d.png" alt="Weather Icon">
+                                <p class="temp24 font">35<span class="font">&#176;C</span></p>
+                                <p class="time24 font ">06:56 PM</p>
+                            </div>
+                            <div class="futureitems">
+                                <img class="img24" src="https://openweathermap.org/img/wn/10d.png" alt="Weather Icon">
+                                <p class="temp24 font">35<span class="font">&#176;C</span></p>
+                                <p class="time24 font ">06:56 PM</p>
+                            </div>
+                            <div class="futureitems">
+                                <img class="img24" src="https://openweathermap.org/img/wn/10d.png" alt="Weather Icon">
+                                <p class="temp24 font">35<span class="font">&#176;C</span></p>
+                                <p class="time24 font ">06:56 PM</p>
+                            </div>
+                            <div class="futureitems">
+                                <img class="img24" src="https://openweathermap.org/img/wn/10d.png" alt="Weather Icon">
+                                <p class="temp24 font">35<span class="font">&#176;C</span></p>
+                                <p class="time24 font ">06:56 PM</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </section>
+                <!-- five day forecast -->
+                <section class="forecast ">
+                    <div class="forecastContent ">
+                        <div class="Heading">
+                            <h1 class=" font">5 Day Forecast </h1>
+                        </div>
+                        <div class="forecastDetails">
+                            <div class="forecastGrid  ">
+                                <p class="font forecastDate">12 Sep 2024</p>
+                                <div class="forecastElements">
+                                    <div class="forecastElement">
+                                        <img class="img24" src="https://openweathermap.org/img/wn/10d.png"
+                                            alt="Weather Icon">
+                                        <p class="temp24 font">35<span class="font">&#176;C</span></p>
+                                        <p class="time24 font ">06:56 PM</p>
+                                    </div>
+
+                                    <div class="forecastElement">
+                                        <img class="img24" src="https://openweathermap.org/img/wn/10d.png"
+                                            alt="Weather Icon">
+                                        <p class="temp24 font">35<span class="font">&#176;C</span></p>
+                                        <p class="time24 font ">06:56 PM</p>
+                                    </div>
+
+                                    <div class="forecastElement">
+                                        <img class="img24" src="https://openweathermap.org/img/wn/10d.png"
+                                            alt="Weather Icon">
+                                        <p class="temp24 font">35<span class="font">&#176;C</span></p>
+                                        <p class="time24 font ">06:56 PM</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="forecastGrid  ">
+                                <p class="font forecastDate">12 Sep 2024</p>
+                                <div class="forecastElements">
+                                    <div class="forecastElement">
+                                        <img class="img24" src="https://openweathermap.org/img/wn/10d.png"
+                                            alt="Weather Icon">
+                                        <p class="temp24 font">35<span class="font">&#176;C</span></p>
+                                        <p class="time24 font ">06:56 PM</p>
+                                    </div>
+
+                                    <div class="forecastElement">
+                                        <img class="img24" src="https://openweathermap.org/img/wn/10d.png"
+                                            alt="Weather Icon">
+                                        <p class="temp24 font">35<span class="font">&#176;C</span></p>
+                                        <p class="time24 font ">06:56 PM</p>
+                                    </div>
+
+                                    <div class="forecastElement">
+                                        <img class="img24" src="https://openweathermap.org/img/wn/10d.png"
+                                            alt="Weather Icon">
+                                        <p class="temp24 font">35<span class="font">&#176;C</span></p>
+                                        <p class="time24 font ">06:56 PM</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="forecastGrid  ">
+                                <p class="font forecastDate">12 Sep 2024</p>
+                                <div class="forecastElements">
+                                    <div class="forecastElement">
+                                        <img class="img24" src="https://openweathermap.org/img/wn/10d.png"
+                                            alt="Weather Icon">
+                                        <p class="temp24 font">35<span class="font">&#176;C</span></p>
+                                        <p class="time24 font ">06:56 PM</p>
+                                    </div>
+
+                                    <div class="forecastElement">
+                                        <img class="img24" src="https://openweathermap.org/img/wn/10d.png"
+                                            alt="Weather Icon">
+                                        <p class="temp24 font">35<span class="font">&#176;C</span></p>
+                                        <p class="time24 font ">06:56 PM</p>
+                                    </div>
+
+                                    <div class="forecastElement">
+                                        <img class="img24" src="https://openweathermap.org/img/wn/10d.png"
+                                            alt="Weather Icon">
+                                        <p class="temp24 font">35<span class="font">&#176;C</span></p>
+                                        <p class="time24 font ">06:56 PM</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="forecastGrid  ">
+                                <p class="font forecastDate">12 Sep 2024</p>
+                                <div class="forecastElements">
+                                    <div class="forecastElement">
+                                        <img class="img24" src="https://openweathermap.org/img/wn/10d.png"
+                                            alt="Weather Icon">
+                                        <p class="temp24 font">35<span class="font">&#176;C</span></p>
+                                        <p class="time24 font ">06:56 PM</p>
+                                    </div>
+
+                                    <div class="forecastElement">
+                                        <img class="img24" src="https://openweathermap.org/img/wn/10d.png"
+                                            alt="Weather Icon">
+                                        <p class="temp24 font">35<span class="font">&#176;C</span></p>
+                                        <p class="time24 font ">06:56 PM</p>
+                                    </div>
+
+                                    <div class="forecastElement">
+                                        <img class="img24" src="https://openweathermap.org/img/wn/10d.png"
+                                            alt="Weather Icon">
+                                        <p class="temp24 font">35<span class="font">&#176;C</span></p>
+                                        <p class="time24 font ">06:56 PM</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="forecastGrid  ">
+                                <p class="font forecastDate">12 Sep 2024</p>
+                                <div class="forecastElements">
+                                    <div class="forecastElement">
+                                        <img class="img24" src="https://openweathermap.org/img/wn/10d.png"
+                                            alt="Weather Icon">
+                                        <p class="temp24 font">35<span class="font">&#176;C</span></p>
+                                        <p class="time24 font ">06:56 PM</p>
+                                    </div>
+
+                                    <div class="forecastElement">
+                                        <img class="img24" src="https://openweathermap.org/img/wn/10d.png"
+                                            alt="Weather Icon">
+                                        <p class="temp24 font">35<span class="font">&#176;C</span></p>
+                                        <p class="time24 font ">06:56 PM</p>
+                                    </div>
+
+                                    <div class="forecastElement">
+                                        <img class="img24" src="https://openweathermap.org/img/wn/10d.png"
+                                            alt="Weather Icon">
+                                        <p class="temp24 font">35<span class="font">&#176;C</span></p>
+                                        <p class="time24 font ">06:56 PM</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <div class="footer">
+                <div class="footerContent">
+                    <p class="color">All &copy; copyright reserved by Weather Forcast Data Fatching
+                        from Open weather Api </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="/Assetes/Scripts/Index.js"></script>
+</body>
+</html>

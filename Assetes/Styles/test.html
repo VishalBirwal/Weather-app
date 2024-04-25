@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .progress{
+            width: 110px;
+            height: 110px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        circle {
+            fill: none;
+            
+        }
+        svg {
+            transform: rotate(-90deg);
+        }
+        circle.progressBG {
+            stroke: #ccc;
+            stroke-width: 10px;
+        }
+        circle.progressFG {
+            stroke-width: 12px;
+            stroke-linecap: round;
+            animation: progress 1s ease;
+        }
+        @keyframes progress {
+            from {
+                stroke-dashoffset: 314;
+            }
+        }
+    </style>
+</head>
+<body>
+    <svg class="progress" >
+        <circle class="progressBG" cx="50" cy="50" r="45"></circle>
+        <circle class="progressFG" cx="50" cy="50" r="45"></circle>
+    </svg>
+    <script>
+        // Get the progress foreground circle
+        const progressFG = document.querySelector('.progressFG');
+        // Calculate the circumference of the circle
+        const radius = parseInt(progressFG.getAttribute('r'));
+        const circumference = 2 * Math.PI * radius;
+        // Set initial dash offset based on percentage (e.g., 50%)
+        const percentage = 35;
+        const dashOffset = circumference - (circumference * (percentage*2)) / 100;
+        progressFG.style.strokeDasharray = `${circumference}`;
+        progressFG.style.strokeDashoffset = `${dashOffset}`;
+
+        // Update stroke color based on percentage
+        if (percentage*2<= 40) {
+            progressFG.style.stroke = 'blue'; // Blue for percentages up to 20
+        } else if (percentage*2 <= 65) {
+            progressFG.style.stroke = 'orange'; // Orange for percentages up to 32
+        } else {
+            progressFG.style.stroke = 'red'; // Red for percentages above 32
+        }
+    </script>
+</body>
+</html>
