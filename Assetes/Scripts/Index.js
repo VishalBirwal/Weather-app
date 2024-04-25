@@ -22,7 +22,7 @@ function toggleMode() {
         body.classList.remove("bgdark")
         body.classList.add("bglight")
         root.style.setProperty('--main-bg', '#2190c2');
-        modeImg.src = '/Assetes/Image/sun.svg';
+        modeImg.src = './Assetes/Image/sun.svg';
         modeImg.alt = 'Dark Mode Image';
         modeImg.style.width = "30px"
         modeImg.classList.add("animateTheam");
@@ -30,7 +30,7 @@ function toggleMode() {
     else {
         body.classList.add("bgdark")
         root.style.setProperty('--main-bg', '#0f3b8d');
-        modeImg.src = "/Assetes/Image/moon-solid.png";
+        modeImg.src = "./Assetes/Image/moon-solid.png";
         modeImg.alt = 'Light Mode Image';
         modeImg.style.width = "25px"
         modeImg.classList.add("animateTheam");
